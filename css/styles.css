@@ -12807,7 +12807,9 @@ header.masthead .masthead-heading {
   top: 25px;
   left: 25px;
 }
-
+.textco{
+  color: white;
+}
 #logado {
   display: none;
 }
