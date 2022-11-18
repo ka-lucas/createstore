@@ -1,0 +1,751 @@
+* {
+  margin: 0;
+  padding: 0%;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html ::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
+html ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #fcc449;
+  border-radius: 5rem;
+}
+
+.fundo img {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.background {
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  background: #7590f8;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.logo img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: auto;
+  margin-left: 3rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+ul li a:hover {
+  text-transform: capitalize;
+  color: rgb(11, 39, 84);
+  border-bottom: solid 1px;
+  border-radius: 2.7px;
+}
+
+hr {
+  border-radius: solid 0.1px;
+  color: black;
+  margin-top: 15px;
+}
+
+/*FORMULARIO*/
+
+.form {
+  display: flex;
+}
+
+.form:hover {
+  text-transform: capitalize;
+  transition: 0.5s;
+  color: rgb(11, 39, 84);
+  border-bottom: solid 6px;
+  border-radius: 12px;
+}
+
+.form button a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.form button {
+  background-color: #fcc449;
+  font-size: 1rem;
+  width: 150px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+fieldset {
+  border: 3px solid #281e5d;
+}
+
+legend {
+  border: 1px solid dodgerblue;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: dodgerblue;
+  border-radius: 8px;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -20px;
+  font-size: 12px;
+  color: dodgerblue;
+}
+
+/*fim form pré-matricula*/
+
+/*CSS DEPOIMENTOS*/
+
+#p-img {
+  width: 13rem;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.depoimento h1 {
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+}
+
+.pais {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+  gap: 3rem;
+}
+.paragrafo {
+  background-color: white;
+  border: solid 1px #090b11;
+  border-radius: 8.5px;
+  padding: 3rem;
+  width: 19rem;
+  height: 30rem;
+}
+
+.paragrafo p {
+  line-height: 2rem;
+  margin-top: 0rem;
+}
+
+.paragrafo h4 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+/*fim CSS depoimentos*/
+
+/*SERIES*/
+#s-img {
+  width: 20rem;
+  height: 26.9rem;
+  border: solid 1.5px #060606;
+  border-radius: 10px;
+  margin-bottom: 19%;
+}
+.box-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-1 h1 {
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+}
+
+.box-2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+  gap: 3rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.serie1:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.serie2:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.serie3:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*fim CSS séries
+
+/*css carousel*/
+
+.java-carrossel {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 10vh;
+  width: 30vw;
+}
+
+.content {
+  height: 400px;
+  width: 700px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 880px) {
+  .content {
+    height: 40%;
+    width: 90%;
+    border-radius: 12px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.content .slide img {
+  height: 100%;
+  width: 100%;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 80px;
+  left: 700px;
+  display: flex;
+}
+
+.bar {
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  margin: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: 0.5s ease;
+}
+
+.bar:hover {
+  background-color: white;
+}
+
+.input1 {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  height: 400px;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+
+#slide1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+/*fim css carousel*/
+/* CSS footer*/
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-distributed {
+  background: #7590f8;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #fcc449;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* responsivo footer */
+
+
+/*fim CSS footer*/
+
+/*CSS pg Quem somos*/
+.imagem-quem img {
+  margin-left: 25%;
+  border-radius: 12px;
+}
+
+@media (max-width: 880px) {
+  .imagem-quem img {
+    margin-left: 25%;
+    border-radius: 12px;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+.titulo-equipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.titulo-equipe h1 {
+  font-size: 50px;
+}
+
+@media(min-width:360px) and (max-width: 880px) {
+  .titulo-equipe h1 {
+    font-size: px;
+    background-color: red;
+  }
+}
+
+.titulo-equipe p {
+  font-size: 20px;
+}
+
+.quem-somos {
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.missao {
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+.visao {
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+.valores {
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/*CSS form contatos*/
+fieldset {
+  border: 0;
+}
+
+form {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: rgba(6, 32, 136);
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 2%;
+  justify-content: center;
+  padding: 1em;
+}
+
+input,
+textarea,
+button {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: rgba(6, 32, 136);
+  border-radius: 5px;
+}
+
+.grupo:before,
+.grupo:after {
+  display: table;
+}
+
+.grupo:after {
+  clear: both;
+}
+
+.campo {
+  margin-bottom: 1em;
+}
+
+.campo label {
+  margin-bottom: 0.2em;
+  color: rgba(6, 32, 136);
+  display: block;
+  /* font-size: 10px; */
+}
+.center1{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="cep"],
+.campo input[type="logradouro"],
+.campo input[type="bairro"],
+.campo input[type="localidade"],
+.campo input[type="uf"],
+.campo textarea {
+  padding: 1px;
+  width: 40%;
+  border: 1px solid rgb(6, 32, 136);
+  box-shadow: 2px 2px 2px #6abbe4;
+  display: flex;
+}
+
+.campo input[type="email"] {
+  padding: 0.2em;
+  border: 1px solid rgba(6, 32, 136);
+  box-shadow: 2px 2px 2px #6abbe4;
+  display: flex;
+  width: 20em;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  background: yellow;
+}
+
+.botao {
+  font-size: 1.2em;
+  background: rgba(6, 32, 136);
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(6, 32, 136);
+  text-shadow: 1px 1px 1px rgba(6, 32, 136);
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.botao:hover {
+  background: #5eacd6;
+  box-shadow: inset 2px 2px 2px rgba(6, 32, 136);
+  text-shadow: none;
+}
+
+.botao {
+  cursor: pointer;
+}
+
+.premat {
+  display: flex;
+}
+
+.premat:hover {
+  text-transform: capitalize;
+  transition: 0.5s;
+  color: rgb(11, 39, 84);
+  border-bottom: solid 6px;
+  border-radius: 12px;
+}
+
+.premat button a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.premat button {
+  background-color: #fcc449;
+  font-size: 1rem;
+  width: 150px;
+  height: 80px;
+  border-radius: 10px;
+}
+/*fim CSS contatos*/
+/*CSS serviços*/
+#sp-img {
+  width: 13rem;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.serviços h1 {
+  align-items: center;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+}
+
+.serviços-geral {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding-top: 10rem;
+  gap: 3rem;
+}
+.serviços-paragrafo {
+  background-color: white;
+  border: solid 1px #090b11;
+  border-radius: 8.5px;
+  padding: 3rem;
+  width: 19rem;
+  height: 50rem;
+}
+
+.serviços-paragrafo p {
+  font-size: 17px;
+  line-height: 1.3rem;
+  margin-top: 0rem;
+}
+
+.serviços-paragrafo h4 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+.portifolio6{
+  border: 1px solid rgb(6, 32, 136);
+  box-shadow: 2px 2px 2px #6abbe4;
+  width: 165px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 20px;
+  color: rgb(6, 32, 136);
+  font-family: "Poppins", sans-serif;
+
+}
+.tp{
+  font-size: 20px;
+  color: rgb(6, 32, 136);
+  font-family: "Poppins", sans-serif;
+}
+@media(min-width:360px) and (max-width: 880px) {
+  .titulo {
+    font-size: 20px;
+    background-color: red;
+  }
+  .center1{
+    font-size: small;
+  }
+}
