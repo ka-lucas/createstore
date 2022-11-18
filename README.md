@@ -13,3 +13,4 @@
     - /Pallone16
     - /LuanCarlozZ
 # Discrição do Site
+    CreateStrore é uma empresa que trabalha na venda de sites personalizados, tem como diferencial o suporte e acompanhamento do cliente, diferente dos sites de       criação vistos por ai o cliente nao ficará resposável pela personalização do site, esse será um trabalho para nossos desenvolvedores, nossa empresa oferece também       serviços como banco de dados, E-commerce, design responsivo e segurança web. 
