@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Login V8</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="/Login_v8/css/util.css" />
+  <link rel="stylesheet" type="text/css" href="/Login_v8/css/main.css" />
+  <!--===============================================================================================-->
+</head>
+
+<body>
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <div class="form1">
+          <h1>ola</h1>
+          <br /><br />
+          <br />
+          <br />
+          <span class="login100-form-title"> Sign In </span>
+
+          <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+            <input id="login01" class="input100" type="text" name="username" placeholder="Username" value="" />
+
+            <span class="focus-input100"></span>
+          </div>
+          <br>
+
+          <div class="wrap-input100 validate-input" data-validate="Please enter password">
+            <input id="senha01" class="input100" type="password" value="" name="pass" placeholder="Password" />
+            <span class="focus-input100" id="spansenha"></span>
+          </div>
+
+          <div class="text-right p-t-13 p-b-23">
+            <span class="txt1"> Forgot </span>
+
+            <a href="#" class="txt2" id="esqueceu" onclick="recu()"> Username / Password? </a>
+          </div>
+
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn" onclick="login()">
+              Sign in
+            </button>
+          </div>
+
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- novo  -->
+  <div class="limiter22">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <div class="form1">
+          <h1>ola</h1>
+          <br /><br />
+          <br />
+          <br />
+          <span class="login100-form-title"> Sign In </span>
+
+          <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+            <input onblur="validarEmail()" onfocus="redefinirMsg()" id="login03" class="input100" type="text"
+              name="E-mail" placeholder="email" value="" />
+            <span class="focus-input100" id="spangmail"> </span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+            <input id="senhaa" class="input100" type="text" name="username" placeholder="senha" value="" />
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Please enter password">
+            <input id="senha02" class="input100" type="password" value="" name="pass" placeholder="confirmar senha" />
+            <span class="focus-input100" id="senhacfs"></span>
+          </div>
+
+          <br>
+
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn" onclick="sign()" id="sign">
+              Sign in
+            </button>
+            <h1 class=" airton">s</h1>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--===============================================================================================-->
+  <script src="/Login_v8/vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="/Login_v8/vendor/animsition/js/animsition.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="/Login_v8/vendor/bootstrap/js/popper.js"></script>
+  <script src="/Login_v8/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="/Login_v8/vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="/Login_v8/vendor/daterangepicker/moment.min.js"></script>
+  <script src="/Login_v8/vendor/daterangepicker/daterangepicker.js"></script>
+  <!--===============================================================================================-->
+  <script src="/Login_v8/vendor/countdowntime/countdowntime.js"></script>
+  <!--===============================================================================================-->
+  <script src="/main.js"></script>
+</body>
+
+</html>
